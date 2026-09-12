@@ -5,21 +5,21 @@
 class McpExposure < Formula
   desc "List the MCP servers registered on this machine and how each one is exposed"
   homepage "https://github.com/nobu666/mcp-exposure"
-  version "0.2.1"
+  version "0.3.0"
   license "MIT"
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/nobu666/mcp-exposure/releases/download/v0.2.1/mcp-exposure_0.2.1_darwin_amd64.tar.gz"
-      sha256 "8ba042e19c750ff3c34da061644f25c0295fb6f72d869a0c4301f5c95e83fb4e"
+      url "https://github.com/nobu666/mcp-exposure/releases/download/v0.3.0/mcp-exposure_0.3.0_darwin_amd64.tar.gz"
+      sha256 "fd83f27ff9c45c87e6005b04e176eabc9e3b717f03dc7da4b30f41641eb6ce1c"
 
       define_method(:install) do
         bin.install "mcp-exposure"
       end
     end
     if Hardware::CPU.arm?
-      url "https://github.com/nobu666/mcp-exposure/releases/download/v0.2.1/mcp-exposure_0.2.1_darwin_arm64.tar.gz"
-      sha256 "d5f52179ba31cd4673738e3564625e982aa21d6323e1051a0582099c08c20913"
+      url "https://github.com/nobu666/mcp-exposure/releases/download/v0.3.0/mcp-exposure_0.3.0_darwin_arm64.tar.gz"
+      sha256 "d80222ad2c40c3ad6efc835d575a1fd58e9730b9324ce7f345424210c391ccab"
 
       define_method(:install) do
         bin.install "mcp-exposure"
@@ -29,15 +29,15 @@ class McpExposure < Formula
 
   on_linux do
     if Hardware::CPU.intel? && Hardware::CPU.is_64_bit?
-      url "https://github.com/nobu666/mcp-exposure/releases/download/v0.2.1/mcp-exposure_0.2.1_linux_amd64.tar.gz"
-      sha256 "6ac9f8669feefb5d74d76a9fd97a4fb9aeda081e06281d2fe45cc31953cedde4"
+      url "https://github.com/nobu666/mcp-exposure/releases/download/v0.3.0/mcp-exposure_0.3.0_linux_amd64.tar.gz"
+      sha256 "bfbd3ff15ae2d27a0835342719bd95f64ce60ac86da2b8948d8faea4ba8a172b"
       define_method(:install) do
         bin.install "mcp-exposure"
       end
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/nobu666/mcp-exposure/releases/download/v0.2.1/mcp-exposure_0.2.1_linux_arm64.tar.gz"
-      sha256 "88cc4e792957b71fb00181f2a857234223e4c790a405fd27666f70e62f62c51d"
+      url "https://github.com/nobu666/mcp-exposure/releases/download/v0.3.0/mcp-exposure_0.3.0_linux_arm64.tar.gz"
+      sha256 "77f0ff1db52db65b6d95ada4c38f9d9b4ffd15870e166b610b8e780f394afb58"
       define_method(:install) do
         bin.install "mcp-exposure"
       end
