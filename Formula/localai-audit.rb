@@ -5,21 +5,21 @@
 class LocalaiAudit < Formula
   desc "Audit local AI services for all-interface binding and DNS-rebinding exposure"
   homepage "https://github.com/nobu666/localai-audit"
-  version "0.3.0"
+  version "0.3.1"
   license "MIT"
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/nobu666/localai-audit/releases/download/v0.3.0/localai-audit_0.3.0_darwin_amd64.tar.gz"
-      sha256 "d7e0041e4220250ca229316da536cf7464fe259769fc293b8e175b4cff7796af"
+      url "https://github.com/nobu666/localai-audit/releases/download/v0.3.1/localai-audit_0.3.1_darwin_amd64.tar.gz"
+      sha256 "b6fbf3ee472e104891f19df17cc6fc657e0b55654539c2e89a32eaed74bf161d"
 
       define_method(:install) do
         bin.install "localai-audit"
       end
     end
     if Hardware::CPU.arm?
-      url "https://github.com/nobu666/localai-audit/releases/download/v0.3.0/localai-audit_0.3.0_darwin_arm64.tar.gz"
-      sha256 "666b226009869de615d09d46c46c90b8cf309b960e6b8458222377c767a1c54c"
+      url "https://github.com/nobu666/localai-audit/releases/download/v0.3.1/localai-audit_0.3.1_darwin_arm64.tar.gz"
+      sha256 "9186d12c77e41eeed44bdfb68c829ad2598b6c2ef4d67453ee62f3a633fbd1f0"
 
       define_method(:install) do
         bin.install "localai-audit"
@@ -29,15 +29,15 @@ class LocalaiAudit < Formula
 
   on_linux do
     if Hardware::CPU.intel? && Hardware::CPU.is_64_bit?
-      url "https://github.com/nobu666/localai-audit/releases/download/v0.3.0/localai-audit_0.3.0_linux_amd64.tar.gz"
-      sha256 "f3063ea2383a4b7c059fbd7ed513dc83ae6b8d2089f30a6e0f1f792e835c01ba"
+      url "https://github.com/nobu666/localai-audit/releases/download/v0.3.1/localai-audit_0.3.1_linux_amd64.tar.gz"
+      sha256 "465b61255f687cd7829bf026e5f5212889e1159577f405931940884dd0b65e43"
       define_method(:install) do
         bin.install "localai-audit"
       end
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/nobu666/localai-audit/releases/download/v0.3.0/localai-audit_0.3.0_linux_arm64.tar.gz"
-      sha256 "f3bdc41c560dccb2df407df52f86fe59ab48c43823ea00a915ad83e5817e4360"
+      url "https://github.com/nobu666/localai-audit/releases/download/v0.3.1/localai-audit_0.3.1_linux_arm64.tar.gz"
+      sha256 "5eb252ef9e2af9e8bd408ddd59e97bfb6c99246f6556f0479d0a8bc262e0a9ba"
       define_method(:install) do
         bin.install "localai-audit"
       end
